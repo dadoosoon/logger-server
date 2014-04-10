@@ -25,6 +25,7 @@ public class MongoLoggerService implements LoggerService {
   @Override
   public Boolean save(Log log) {
     if (log != null) {
+      log.setSaveDatetime(System.currentTimeMillis());
       this.mongoTemplate.save(log, "log");
       return true;
     } else {
