@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  * @author codekitten
  */
 @Component("loggerService")
-public class LoggerServiceImpl implements LoggerService {
+public class MongoLoggerService implements LoggerService {
   
   @Resource
   private MongoTemplate mongoTemplate;

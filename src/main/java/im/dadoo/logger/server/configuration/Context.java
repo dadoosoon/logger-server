@@ -31,7 +31,7 @@ public class Context {
     MongoClientOptions options = 
       MongoClientOptions.builder().autoConnectRetry(true)
               .socketKeepAlive(true).writeConcern(WriteConcern.FSYNCED).build();               
-    return new MongoClient("202.114.18.242:27017", options);
+    return new MongoClient("mongo.dadoo.im:27017", options);
   }
   
   @Bean
